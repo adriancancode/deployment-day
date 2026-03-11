@@ -7,8 +7,6 @@ By the end of this workshop, you will learn how to:
 
 - Fork a GitHub repository
 - Clone a project locally
-- Make a simple change to a website
-- Push updates to GitHub
 - Deploy your site to the internet using **Netlify or Vercel**
 
 ---
@@ -31,28 +29,7 @@ https://your-project-name.netlify.app
 
 ---
 
-# 📂 Project Structure
-
-```
-deployment-workshop/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
-This is a **simple static website** consisting of:
-
-- **HTML** → structure of the webpage
-- **CSS** → styling
-- **JavaScript** → optional interactive behavior
-
-No frameworks or build tools are required.
-
----
-
-# 1️ Fork This Repository
+## 1️ Fork This Repository
 
 First, create your own copy of this project.
 
@@ -67,7 +44,7 @@ https://github.com/YOUR_USERNAME/deployment-workshop
 
 ---
 
-# 2️ Clone the Repository
+## 2️ Clone the forked Repository
 
 Next, download the project to your computer.
 
@@ -83,7 +60,7 @@ cd deployment-workshop
 
 ---
 
-# 3️ Open the Project and install dependencies
+## 3️ Open the Project and install dependencies
 
 Open the project in your preferred editor.
 
@@ -91,76 +68,25 @@ Example using **VS Code**:
 
 ```bash
 code .
-
+npm install
 ```
 
 ---
 
-# 4️ Run the Website Locally
+## 4️ Run the Website Locally
 
 ```
 npm run dev
 ```
 
-Or use a local server.
-
-Example with VS Code **Live Server extension**:
-
-Right click:
-
-```
-index.html → Open with Live Server
-```
-
----
-
-# 5️⃣ Make a Small Change
-
-Edit the website so your deployment is unique.
-
-Example:
-
-Open **index.html** and change the title or text.
-
-```html
-<h1>Hello from Adrian's Workshop 🚀</h1>
-```
-
-Save your changes.
-
----
-
-# 6️⃣ Commit and Push Your Changes
-
-Stage your changes:
-
-```bash
-git add .
-```
-
-Commit:
-
-```bash
-git commit -m "Updated website for deployment workshop"
-```
-
-Push to GitHub:
-
-```bash
-git push origin main
-```
-
----
-
-# 7️⃣ Deploy Your Website
+## 5 Deploy Your Website
 
 You will now deploy your project using one of the following platforms.
 
 ## Option A — Deploy with Vercel
 
 1. Go to  
-https://vercel.com
-
+[https://vercel.com/new](https://vercel.com/new)
 2. Sign in using **GitHub**
 3. Click **Add New Project**
 4. Import your forked repository
@@ -168,7 +94,7 @@ https://vercel.com
 
 Vercel will automatically detect that this is a static site.
 
-Your site will be live in about **30 seconds**.
+Your site will be live in about **30 seconds to a minute**.
 
 ---
 
@@ -177,9 +103,9 @@ Your site will be live in about **30 seconds**.
 1. Go to  
 https://netlify.com
 
-2. Sign in with **GitHub**
-3. Click **Add New Site**
-4. Select **Import from Git**
+2. Sign in/up with **GitHub**
+3. Select **Import from Git**
+4. Under **Let’s deploy your project with…**, select **Github**
 5. Choose your forked repository
 6. Click **Deploy Site**
 
@@ -191,32 +117,41 @@ Your site will be live shortly.
 
 You have successfully deployed a website to the internet!
 
+---
+
+## The Extra Mile(Optional): Make some changes to your site
+
 Your project will automatically **redeploy whenever you push new commits to GitHub**.
 
-Try updating the site again and pushing another commit to see automatic deployment in action.
+Try updating the site and pushing another commit to see automatic deployment in action.
 
----
+Example:
+
+Open **App.tsx** and change the title or text.
+
+```
+<h1>Hello from ACM's Workshop 🚀</h1>
+```
+Save your changes, then commit and push them to Github.
+```bash
+git add -A/-a
+git commit -m "Made changes to website for deployment workshop"
+git push
+```
+And... voila!  Your new changes are reflected on the deployment!
 
 # 📚 Useful Resources
 
 ### Netlify Docs
-https://docs.netlify.com/
+[https://docs.netlify.com/](https://docs.netlify.com/)
 
 ### Vercel Docs
-https://vercel.com/docs
+[https://vercel.com/docs](https://vercel.com/docs)
 
 ### GitHub Guides
-https://guides.github.com/
+[https://guides.github.com/](https://guides.github.com/)
 
 ### Git Cheat Sheet
-https://education.github.com/git-cheat-sheet-education.pdf
+[https://education.github.com/git-cheat-sheet-education.pdf](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ---
-
-# 💻 Workshop Information
-
-This repository is used for deployment workshops such as:
-
-- **ACM CSUF Workshops**
-- Intro to Web Deployment
-- GitHub + Hosting Basics
