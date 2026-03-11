@@ -1,73 +1,222 @@
-# React + TypeScript + Vite
+# 🚀 Website Deployment Workshop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Website Deployment Workshop Repo!**  
+This repository contains a **simple static website** that you will deploy using modern hosting platforms such as **Netlify** or **Vercel**.
 
-Currently, two official plugins are available:
+By the end of this workshop, you will learn how to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fork a GitHub repository
+- Clone a project locally
+- Make a simple change to a website
+- Push updates to GitHub
+- Deploy your site to the internet using **Netlify or Vercel**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 🌐 Live Deployment Goal
 
-## Expanding the ESLint configuration
+During this workshop, you will deploy your own version of this website so that it is accessible through a **public URL on the internet**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Example:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+https://your-project-name.vercel.app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+or
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+https://your-project-name.netlify.app
+```
+
+---
+
+# 📂 Project Structure
+
+```
+deployment-workshop/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+This is a **simple static website** consisting of:
+
+- **HTML** → structure of the webpage
+- **CSS** → styling
+- **JavaScript** → optional interactive behavior
+
+No frameworks or build tools are required.
+
+---
+
+# 1️ Fork This Repository
+
+First, create your own copy of this project.
+
+1. Click the **Fork** button at the top right of this page.
+2. Select your GitHub account.
+
+You should now have a copy of the repository under:
+
+```
+https://github.com/YOUR_USERNAME/deployment-workshop
+```
+
+---
+
+# 2️ Clone the Repository
+
+Next, download the project to your computer.
+
+```bash
+git clone https://github.com/YOUR_USERNAME/deployment-workshop.git
+```
+
+Move into the project directory:
+
+```bash
+cd deployment-workshop
+```
+
+---
+
+# 3️ Open the Project and install dependencies
+
+Open the project in your preferred editor.
+
+Example using **VS Code**:
+
+```bash
+code .
+
+```
+
+---
+
+# 4️ Run the Website Locally
+
+```
+npm run dev
+```
+
+Or use a local server.
+
+Example with VS Code **Live Server extension**:
+
+Right click:
+
+```
+index.html → Open with Live Server
+```
+
+---
+
+# 5️⃣ Make a Small Change
+
+Edit the website so your deployment is unique.
+
+Example:
+
+Open **index.html** and change the title or text.
+
+```html
+<h1>Hello from Adrian's Workshop 🚀</h1>
+```
+
+Save your changes.
+
+---
+
+# 6️⃣ Commit and Push Your Changes
+
+Stage your changes:
+
+```bash
+git add .
+```
+
+Commit:
+
+```bash
+git commit -m "Updated website for deployment workshop"
+```
+
+Push to GitHub:
+
+```bash
+git push origin main
+```
+
+---
+
+# 7️⃣ Deploy Your Website
+
+You will now deploy your project using one of the following platforms.
+
+## Option A — Deploy with Vercel
+
+1. Go to  
+https://vercel.com
+
+2. Sign in using **GitHub**
+3. Click **Add New Project**
+4. Import your forked repository
+5. Click **Deploy**
+
+Vercel will automatically detect that this is a static site.
+
+Your site will be live in about **30 seconds**.
+
+---
+
+## Option B — Deploy with Netlify
+
+1. Go to  
+https://netlify.com
+
+2. Sign in with **GitHub**
+3. Click **Add New Site**
+4. Select **Import from Git**
+5. Choose your forked repository
+6. Click **Deploy Site**
+
+Your site will be live shortly.
+
+---
+
+# 🎉 Congratulations!
+
+You have successfully deployed a website to the internet!
+
+Your project will automatically **redeploy whenever you push new commits to GitHub**.
+
+Try updating the site again and pushing another commit to see automatic deployment in action.
+
+---
+
+# 📚 Useful Resources
+
+### Netlify Docs
+https://docs.netlify.com/
+
+### Vercel Docs
+https://vercel.com/docs
+
+### GitHub Guides
+https://guides.github.com/
+
+### Git Cheat Sheet
+https://education.github.com/git-cheat-sheet-education.pdf
+
+---
+
+# 💻 Workshop Information
+
+This repository is used for deployment workshops such as:
+
+- **ACM CSUF Workshops**
+- Intro to Web Deployment
+- GitHub + Hosting Basics
