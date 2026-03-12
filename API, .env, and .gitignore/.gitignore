@@ -1,0 +1,3 @@
+# Ensures git does NOT track .env
+# Prevents accidentally committing this file
+.env
